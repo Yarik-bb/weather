@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="menu">
+                <h1 class="logo">Weather</h1>
+                <button class="burger-menu" id="burger-menu">☰</button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#weather">Погода</a></li>
+                    <li><a href="#feedback">Відгуки</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section class="weather-section" id="weather">
+            <h2>Погода</h2>
+            <div class="location">
+                <input type="text" id="city" placeholder="Введіть місто" value="Варшава">
+                <button id="get-weather">Клікай!</button>
+            </div>
+            <div class="weather-result">
+                <p>Температура: <span id="temperature">-</span>, Погода: <span id="description">-</span></p>
+            </div>
+        </section>
+
+        <section class="feedback-section" id="feedback">
+            <h2>Ваш відгук</h2>
+            <form id="feedback-form">
+                <input type="text" id="nickname" placeholder="Ваше ім'я" required>
+                <textarea id="comment" placeholder="Напишіть свій коментар" required></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+            <div class="feedback-display">
+                <h3>Попередні відгуки:</h3>
+                <ul id="random-comments">
+                    
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>© 2024 Weather. Всі права захищені.</p>
+        <p>Створено з ❤️ в Україні</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
